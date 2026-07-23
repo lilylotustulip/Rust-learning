@@ -42,3 +42,21 @@ example:
             let a = 'a';
             let star = '✨️';
         }`
+
+## COMPOUND    
+unlike the scalar type, compound type can group multiple values into a single type, such as tuples and arrays.
+
+### TUPLE
+a tuple is a way of grouping different values with different types into a single compound type.
+Tuples are fixed, once declared they cannot be edited.
+If ever you want a single value or so out of the tuple, you can destructure it using pattern matching.
+example:
+        `fn main(){
+            let tup = (200, 5, 2.1);
+            let (a, b, c) = tup;
+
+            println!("the value of a is {a}");
+        }`
+
+You can also acess a value within a tuple using a period + the index of the value you want.
+A tuple without any value is called a unit. Experessions return the unit value if ever they return nothing else.
