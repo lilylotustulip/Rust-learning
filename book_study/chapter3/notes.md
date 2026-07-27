@@ -58,5 +58,12 @@ example:
             println!("the value of a is {a}");
         }`
 
-You can also acess a value within a tuple using a period + the index of the value you want.
+You can also access a value within a tuple using a period + the index of the value you want.
 A tuple without any value is called a unit. Experessions return the unit value if ever they return nothing else.
+
+### ARRAYS
+Arrays are an other type of grouping different values. Arrays only accepts values of the same type and with a fixed length.
+An Array's type for example is written this way:
+`let a: [i32; 3] = [1, 2, 3];`
+the i32, is the type of each value whithin the array, and 3 is the amount of values that this array gonna have.
+Arrays can be accessed by indexing, for example to access one in the 'a' array, you do `let num = a[1];` and this way you have assigned 2 to num.
