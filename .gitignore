@@ -1,1 +1,6 @@
 **/target/
+
+# compiled binary files:
+temp_converter
+inventory_tracker
+
