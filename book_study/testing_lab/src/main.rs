@@ -1,6 +1,7 @@
-fn main(){
-    let tup = (200, 5, 2.1);
-    let (a, b, c) = tup;
-
-    println!("the value of a is {a}");
+fn main() {
+    let x = number();
+    println!("the number represents: {x}");
+}
+fn number() -> i32 {
+    2
 }

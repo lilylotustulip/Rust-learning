@@ -67,3 +67,46 @@ An Array's type for example is written this way:
 `let a: [i32; 3] = [1, 2, 3];`
 the i32, is the type of each value whithin the array, and 3 is the amount of values that this array gonna have.
 Arrays can be accessed by indexing, for example to access one in the 'a' array, you do `let num = a[1];` and this way you have assigned 2 to num.
+
+# FUNCTIONS
+Functions in rust are declared by the fn keyword,  followed by the name of the fonction which conventionally uses the snake case (all letters lowercase and words are separated with an underscore), and then a set of parentheses.
+Then there is the curly brackets which tells rust where the body code begins and ends.
+we have seen an example of that in all previous programs, which was the main function.
+`fn main() {
+    println!("hello, world!);
+}
+`
+## PARAMETERS
+parameters are some values you put inside the parentheses, they are part of the function's signature, type declaration is required and multiple parameteres are seperated with commas.
+example:
+`fn main() {
+    temperature(20, 'C');
+}
+fn temperature (value: u32, temp_type: char) {
+    println!("the temperature is: {value}{temp_type}");
+}`
+
+## STATEMENT AND EXPRESSIONS
+function bodies are made of expressions and statements. So what is an expression? and what is a statement?
+* **Expressions** return a value, and they do not end with a semicolon, they make up most of the cod we write in rust because Rust is an expression-based language.
+
+* **Statements** perform an action, but do not return any value. Statements do end with semicolons.
+
+## FUNCTIONS AND RETURN VALUES
+functions return values, we declare their type after an arrow (->).
+you can assign a function to a variable using its call and the name of the variable.
+example:
+`fn main() {
+    let x = number();
+    println!("the number represents: {x}");
+}
+fn number() -> i32 {
+    2
+}`
+keep in mind, if you want to return a value dont end the line with a semicolon, this will make the expression a statement, leading to an error.
+
+# COMMENTS
+comment are ignored by the compiler. They are used for pseudo-code, or code explanation =, to make it easier for the reader.  a comment start by 2 slashes like so : "//" and end in the end of the line.
+if you want comments in more than a line all you have to do is add 2 slashes at te beginning of each line.
+example:
+`// this is a comment`
