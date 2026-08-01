@@ -119,3 +119,19 @@ this can be done with if expressions and loops.
 if expressions make the code run if the set of conditions u set previously is met, otherwise it doesn't run.
 u can else to make a default condition, so for example if the conditions didnt met the if expression's the code will skip it and go to else and print whatever is listed in there.
 you can also do a `else if` to provide a more detailes set of expressions. The compiler only runs the first true condition and ignores the rest set of conditions.
+
+## LOOPS
+Rust has 3 types of loops, for repeated actions.
+there is loop, while and for.
+
+### LOOP KEYWORD
+the "loop" keyword tells rust to execute the code again and again until you stop it, using `ctrl+C `or something like so.
+you can hold a return a value from a loop, by assigning it to a variable.
+
+### WHILE LOOP
+a while loop is a combination of loop, if, else and break.
+it loops as long as a condition is true and then breaks once its false.
+
+### FOR LOOP
+for loop is the safe, it is clean and less error-prone. 
+it runs over a collection like an array, once its reaches the end it stops.
