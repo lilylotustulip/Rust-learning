@@ -110,3 +110,12 @@ comment are ignored by the compiler. They are used for pseudo-code, or code expl
 if you want comments in more than a line all you have to do is add 2 slashes at te beginning of each line.
 example:
 `// this is a comment`
+
+# CONTROL FLOW
+this makes the code run while some condition is true, and it can also run repeatedly while the condition is true.
+this can be done with if expressions and loops.
+
+## IF EXPRESSIONS
+if expressions make the code run if the set of conditions u set previously is met, otherwise it doesn't run.
+u can else to make a default condition, so for example if the conditions didnt met the if expression's the code will skip it and go to else and print whatever is listed in there.
+you can also do a `else if` to provide a more detailes set of expressions. The compiler only runs the first true condition and ignores the rest set of conditions.
