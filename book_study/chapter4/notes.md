@@ -13,7 +13,8 @@ Keep these rules about ownership in mind:
 ### EXAMPLE
 let's take this peice of code as an example:
 
-`fn main () {
+```
+fn main () {
     let username = String::from("cookie");
     let clearance_level:i32 = 15;
     let badge = generate_badge(username, clearance_level);
@@ -25,7 +26,8 @@ let's take this peice of code as an example:
 
 fn generate_badge(username:String, clearance_level:i32) ->String{
     format!("Username: {}, level: {}", username, clearance_level)
-}`
+}
+```
 
 * **Passing Values:** when we passed `username` to the `generate_badge` function, the ownership of it is moved out of main to `generate_badge`, whereby `main()` loses ownership of `username`.
 
