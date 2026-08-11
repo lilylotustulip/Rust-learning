@@ -19,29 +19,35 @@ This does somewhat handles the error, which means no compilor error is thrown at
 these are decimal numbers, there are 2 types, the **f64** and **f32**. 
 **f64** is the default one so if you ever want to use f32 u have to specify it.
 example: 
-        `fn main() {
+```
+        fn main() {
             let x = 4.0; // f64
 
             let y: f32 = 2.0; // f32
-        }`
+        }
+```        
                
 ### BOOLEANS
 booleans, are one byte in sized. they have 2 values, true of false, and is referred to as bool.
 example:
-        `fn main() {
+```
+        fn main() {
             let x = true;
 
             let y: bool = false;
-        }`
+        }
+```
 
 ### CHARACTERS
 characters are 4 bytes in size. and specified with single quotes ''.
 they support, emojies, letters, and far more.
 example:
-        `fn main() {
+```
+        fn main() {
             let a = 'a';
             let star = '✨️';
-        }`
+        }
+```
 
 ## COMPOUND    
 unlike the scalar type, compound type can group multiple values into a single type, such as tuples and arrays.
@@ -51,12 +57,14 @@ a tuple is a way of grouping different values with different types into a single
 Tuples are fixed, once declared they cannot be edited.
 If ever you want a single value or so out of the tuple, you can destructure it using pattern matching.
 example:
-        `fn main(){
+```
+        fn main(){
             let tup = (200, 5, 2.1);
             let (a, b, c) = tup;
 
             println!("the value of a is {a}");
-        }`
+        }
+```
 
 You can also access a value within a tuple using a period + the index of the value you want.
 A tuple without any value is called a unit. Experessions return the unit value if ever they return nothing else.
@@ -72,19 +80,22 @@ Arrays can be accessed by indexing, for example to access one in the 'a' array, 
 Functions in rust are declared by the fn keyword,  followed by the name of the fonction which conventionally uses the snake case (all letters lowercase and words are separated with an underscore), and then a set of parentheses.
 Then there is the curly brackets which tells rust where the body code begins and ends.
 we have seen an example of that in all previous programs, which was the main function.
-`fn main() {
+```
+fn main() {
     println!("hello, world!);
 }
-`
+```
 ## PARAMETERS
 parameters are some values you put inside the parentheses, they are part of the function's signature, type declaration is required and multiple parameteres are seperated with commas.
 example:
-`fn main() {
+```
+fn main() {
     temperature(20, 'C');
 }
 fn temperature (value: u32, temp_type: char) {
     println!("the temperature is: {value}{temp_type}");
-}`
+}
+```
 
 ## STATEMENT AND EXPRESSIONS
 function bodies are made of expressions and statements. So what is an expression? and what is a statement?
@@ -96,13 +107,15 @@ function bodies are made of expressions and statements. So what is an expression
 functions return values, we declare their type after an arrow (->).
 you can assign a function to a variable using its call and the name of the variable.
 example:
-`fn main() {
+```
+fn main() {
     let x = number();
     println!("the number represents: {x}");
 }
 fn number() -> i32 {
     2
-}`
+}
+```
 keep in mind, if you want to return a value dont end the line with a semicolon, this will make the expression a statement, leading to an error.
 
 # COMMENTS
