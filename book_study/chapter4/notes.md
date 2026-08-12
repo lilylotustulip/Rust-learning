@@ -37,7 +37,7 @@ line 21 will throw a compiler error, because the main function has lost ownershi
 
 *we haven't study this yet so we don't know how it works exactly*
 
-
+## Understanding Rust Memory: Moves, Clones, and the Copy Trait
 in rust there is an automatic function that is called whenever the code hits the end of a scope in the runtime. this drop function drops all values, and clean up the heap memory for those variables, so after the scope ends the value doesn't have an owner so its dropped. 
 in more complicated situations there may be some unexpected compilor errors.
 
