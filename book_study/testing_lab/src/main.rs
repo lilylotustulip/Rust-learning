@@ -1,7 +1,12 @@
-fn main() {
-    let s1 = String::from("hello");
-    let s2 = s1;
+fn main() { 
+    let mut s = String::from("hello");
 
-    println!("{s1}, world!"); // error: you should do s2 because s1 has been moved to s2
+    let r1 = &s; // no problem
+    let r2 = &s; // no problem
+    println!("{r1} and {r2}");
+    // Variables r1 and r2 will not be used after this point.
 
+    let r3 = &mut s; // no problem
+    println!("{r3}");
+    println!("{r2}"); // error!
 }
