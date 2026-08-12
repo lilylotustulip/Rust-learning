@@ -78,7 +78,8 @@ However, there is some exception.
 
     println!("{r2}"); // error!
 
-}```
+}
+```
 
 You can borrow a value from a function to an other by using a reference too. you dont move ownership of it, you dont even have to return it after being used in an other function because the function in which it was called has ownership of it already. 
 
