@@ -1,7 +1,4 @@
 **/target/
 
-# compiled binary files:
-temp_converter
-inventory_tracker
-monitor
-badge_generator
+book_study/chapter1/hello_world/main
+exercices/bin/
