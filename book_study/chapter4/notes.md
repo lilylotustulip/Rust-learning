@@ -83,3 +83,8 @@ However, there is some exception.
 You can borrow a value from a function to an other by using a reference too. you dont move ownership of it, you dont even have to return it after being used in an other function because the function in which it was called has ownership of it already. 
 
 There is dangle pointer which is a pointer that refers to some location frees some of the memory while preserving a pointer to that memory, Rust prevents these at compile time, because they cause security vulnerabilities.
+
+### SLICE
+Slice are like references they are made to prevent some bugs while programming.
+for instance instead of letting a value stored somwhere and then later on clearing where it came from, you risk causing bugs. 
+Thus Rust came up with slice, slice are like windows, they take the full length of a string literal or some other data types like integers, and store it inside brackets, and if you ever wan to clean up or so, the compiler stops you, because its immutable and as mentionned in pointers mutable and immutable references are not available to be together. and also you cant even edit it because it is in fact immutable.
