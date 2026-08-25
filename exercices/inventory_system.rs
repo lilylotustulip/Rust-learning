@@ -23,3 +23,4 @@ fn restock(quantity:&mut i32, location:&mut &str) {
 fn decommition(item_name:String) ->String {
     format!("item name: {}", item_name)
 }
+}
