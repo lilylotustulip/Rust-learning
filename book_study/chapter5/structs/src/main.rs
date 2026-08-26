@@ -5,3 +5,4 @@ fn main() {
     let area = height * width;
     println!("the area is {}" ,area);
 }
+
