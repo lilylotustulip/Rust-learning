@@ -62,4 +62,4 @@ fn main() {
 when calling a method you do the structname.methodname(). you dont need to do the referencing mutabilty or even dereferencing symboles here because rust handles that automatically.
 
 ## NON-METHOD ASSOCIATED FUNCTION
-a non-method associated function or a construcor, is when u make up some function and use it instead of using a struct, with that you dont actually have a method, but still it is an assosiated function. the syntax is pretty commun to a frequently used line: `name = String::from("name");`
+a non-method associated function or a construcor, is when u make up some function and use it for a struct, when you have no instance yet. with that you dont actually have a method, but still it is an assosiated function. the syntax is pretty commun to a frequently used line: `name = String::from("name");`
