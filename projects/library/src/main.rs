@@ -20,7 +20,7 @@ impl Patron {
 
 impl Book{
      fn book_availability(&mut self) {
-        self.is_available = false;
+        self.is_available = true;
     }
 }
 
@@ -42,6 +42,17 @@ fn user_inp()-> Patron{
     }
 }
 
+fn checkout_book(book: &mut Book, patron: &mut Patron ){
+    if book.is_available == true{
+        println!("patron: {}, ckecked out {}", patron.name, book.name);
+        book.is_available = false;
+    }
+    else { 
+        println!("sorry, the book: {}, isn't available", book.name);
+    }
+
+}
+
 
 fn main(){
     let mut book1 = Book{
@@ -56,11 +67,11 @@ fn main(){
         fines_due: 2,
     };
 
-    let patron_input1 = user_inp();
+    let mut patron_input1 = user_inp();
 
 
     patron1.update_balance(2);
-    book1.book_availability();
+    book1.book_availability(); 
 
     println!("the book availability: {}", book1.is_available);
     println!("patron fines: {}", patron1.fines_due);
@@ -70,4 +81,5 @@ fn main(){
 
     println!("patron infos: name:{} | id: {} | fines: {}", patron_input1.name, patron_input1.id, patron_input1.fines_due);
 
+    checkout_book(&mut book1, &mut patron_input1);
 }
