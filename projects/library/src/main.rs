@@ -53,6 +53,15 @@ fn checkout_book(book: &mut Book, patron: &mut Patron ){
 
 }
 
+fn return_book(book: &mut Book){
+    if book.is_available == false{
+        book.is_available = true;
+        println!("book returned successfully");
+    }
+    else{
+        println!("the book wasn't checkedout to be returned");
+    }
+}
 
 fn main(){
     let mut book1 = Book{
@@ -82,4 +91,5 @@ fn main(){
     println!("patron infos: name:{} | id: {} | fines: {}", patron_input1.name, patron_input1.id, patron_input1.fines_due);
 
     checkout_book(&mut book1, &mut patron_input1);
+    return_book(&mut book1);
 }
